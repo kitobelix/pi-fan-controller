@@ -9,6 +9,8 @@ https://einhugur.com/blog/index.php/big-projects/build-fan-controller-for-orange
 
 **NOTE:** You'll need to put the circuit board together as described in the Einhugur blog post for this to work.
 
+Implements a makefile modified by milyovski https://github.com/milyovski
+
 ## Dependencies
 This daemon depends on WiringOP being installed. You can get it from here:
 

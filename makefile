@@ -1,12 +1,12 @@
 INCLUDE = -I/usr/local/include
 LIBFOLDER = -L/usr/local/lib
-LIBS = -lwiringPi -lwiringPiDev -lpthread -lm
+LIBS = -lwiringPi -lwiringPiDev -lpthread -lm -lcrypt
 
 SRC = pi-fan-controller.cpp
 EXENAME = pi-fan-controller
 
 all: 
-	g++ -std=c++11 $(INCLUDE) $(LIBFOLDER) $(LIBS) $(SRC) -o $(EXENAME)
+	g++ -std=c++11 $(INCLUDE) $(SRC) -o $(EXENAME) $(LIBFOLDER) $(LIBS)
 
 install.upstart:
 	cp ./pi-fan-controller /usr/bin -f
